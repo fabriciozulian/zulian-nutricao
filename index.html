@@ -31,7 +31,7 @@
 					<tbody id="tabela-pacientes">
 						<tr class="paciente" >
 							<td class="info-nome">Paulo</td>
-							<td class="info-peso">100</td>
+							<td class="info-peso">1000</td>
 							<td class="info-altura">2.00</td>
 							<td class="info-gordura">10</td>
 							<td class="info-imc">0</td>
@@ -69,7 +69,35 @@
 						</tr>
 					</tbody>
 				</table>
+			</section>
 
+			<section>
+				<div class="container">
+					<h2>Adicionar novo paciente</h>
+				</div>
+				<form>
+					<div>
+						<label for="inNome">Nome:</label>
+						<input type="text" id="inNome" placeholder="Digite o nome" autocomplete="off" required>
+					</div>
+					<div class="group">
+						<div>
+							<label for="inPeso">Peso:</label>
+							<input type="text" id="inPeso" placeholder="Digite o peso" autocomplete="off" required>
+						</div>
+						<div>
+							<label for="inAltura">Altura:</label>
+							<input type="text" id="inAltura" placeholder="Digite altura" min="0.3" max="3" autocomplete="off" required>
+						</div>
+						<div>
+							<label for="inGordura">% Gordura:</label>
+							<input type="text" id="inGordura" placeholder="Digite o percentual de gordura." autocomplete="off" required>
+						</div>
+					</div>
+					<div class="botao">
+						<input type="submit" value="Adicionar">
+					</div>
+				</form>
 			</section>
 		</main>
 		<script src="js/script.js"></script>

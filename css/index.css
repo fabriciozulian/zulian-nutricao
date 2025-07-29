@@ -132,3 +132,59 @@ button[disabled=disabled], button:disabled {
 .campo-invalido{
 	border: 1px solid red;
 }
+
+form {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	gap: 10px;
+}
+
+form label {
+	font-size: 20px;
+}
+
+form input {
+	height: 30px;
+}
+
+form input:focus {
+	outline-color: rgb(68, 127, 221);
+}
+
+.group {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.group div {
+	width: 33%;
+}
+
+.group input {
+	width: 100%;
+}
+
+.botao {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.botao input {
+	border: outset;
+	border-width: 0 0 4px 0;
+	color: white;
+	background-color: #0c8cd3;
+	height: 40px;
+}
+
+
+
+#inNome {
+	width: 100%;
+}
+
