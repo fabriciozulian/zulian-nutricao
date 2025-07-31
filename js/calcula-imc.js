@@ -1,34 +1,5 @@
-atualizarDados();
-
-function atualizarDados(){
-    let pacientes = document.querySelectorAll(".paciente");
-    for (paciente of pacientes) {
-        calculaImc(paciente);
-    }
-}
-
-function calculaImc(paciente) {
-    const peso = Number((paciente.querySelector(".info-peso")).textContent);
-    const altura = Number((paciente.querySelector(".info-altura")).textContent);
-    const imc = paciente.querySelector(".info-imc");
-    let alturaStatus = true;
-    let pesoStatus = true
-
-    if (peso <= 0 || peso >= 1000) {
-        imc.textContent = "Peso inválido";
-        pesoStatus = false;
-        imc.style.background = "red";
-    }
-
-    if (altura <= 0 || altura >= 3.00) {
-        imc.textContent = "Altura é inválida";
-        alturaStatus = false;
-    }
-
-    if (alturaStatus && pesoStatus) {
-        imc.textContent = (peso / (altura * altura)).toFixed(2);
-    }
-}
+const frm = document.querySelector("form");
+const tabela = document.querySelector("#tabela-pacientes");
 
 frm.addEventListener("submit", (e) => {
     e.preventDefault();
