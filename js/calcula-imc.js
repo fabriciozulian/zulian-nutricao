@@ -17,3 +17,4 @@ function calculaImc(paciente) {
         return (peso / (altura * altura)).toFixed(2);
 }
 
+
