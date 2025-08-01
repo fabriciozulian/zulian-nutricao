@@ -14,7 +14,7 @@ function atualizarDados(){
 function calculaImc(paciente) {
     const peso = Number(paciente.peso);
     const altura = Number(paciente.altura);
-        return (peso / (altura * altura)).toFixed(2);
+    return (peso / (altura * altura)).toFixed(2);
 }
 
 
