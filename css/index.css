@@ -188,3 +188,12 @@ form input:focus {
 	width: 100%;
 }
 
+#mensagemErro {
+	margin-bottom: 10px;
+}
+
+#mensagemErro li {
+	color: red;
+}
+
+ 

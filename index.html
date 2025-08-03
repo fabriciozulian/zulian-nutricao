@@ -63,7 +63,7 @@
 						<tr class="paciente" >
 							<td class="info-nome">Tatiana</td>
 							<td class="info-peso">46</td>
-							<td class="info-altura">1.55</td>
+							<td class="info-altura">-1.55</td>
 							<td class="info-gordura">19</td>
 							<td class="info-imc">0</td>
 						</tr>
@@ -73,25 +73,27 @@
 
 			<section>
 				<div class="container">
-					<h2>Adicionar novo paciente</h>
+					<h2>Adicionar novo paciente</h2>
+						<ul id="mensagemErro">
+						</ul>
 				</div>
 				<form>
 					<div>
 						<label for="inNome">Nome:</label>
-						<input type="text" id="inNome" placeholder="Digite o nome" autocomplete="off" required>
+						<input type="text" id="inNome" placeholder="Digite o nome" autocomplete="off">
 					</div>
 					<div class="group">
 						<div>
 							<label for="inPeso">Peso:</label>
-							<input type="text" id="inPeso" placeholder="Digite o peso" autocomplete="off" required>
+							<input type="text" id="inPeso" placeholder="Digite o peso" autocomplete="off">
 						</div>
 						<div>
 							<label for="inAltura">Altura:</label>
-							<input type="text" id="inAltura" placeholder="Digite altura" min="0.3" max="3" autocomplete="off" required>
+							<input type="text" id="inAltura" placeholder="Digite altura" min="0.3" max="3" autocomplete="off">
 						</div>
 						<div>
 							<label for="inGordura">% Gordura:</label>
-							<input type="text" id="inGordura" placeholder="Digite o percentual de gordura." autocomplete="off" required>
+							<input type="text" id="inGordura" placeholder="Digite o percentual de gordura." autocomplete="off">
 						</div>
 					</div>
 					<div class="botao">
