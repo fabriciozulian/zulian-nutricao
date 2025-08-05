@@ -182,6 +182,10 @@ form input:focus {
 	height: 40px;
 }
 
+.paciente-out {
+	opacity: 0%;
+	transition: 0.5s;
+}
 
 
 #inNome {
