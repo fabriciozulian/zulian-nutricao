@@ -185,7 +185,11 @@ form input:focus {
 .slideRemove {
 	opacity: 0%;
 	transition: 500ms;
+}.paciente-out {
+	opacity: 0%;
+	transition: 0.5s;
 }
+
 
 #inNome {
 	width: 100%;
