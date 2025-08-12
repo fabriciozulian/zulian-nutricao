@@ -192,6 +192,10 @@ form input:focus {
 	transition: 0.5s;
 }
 
+.invisivel {
+	display: none;
+}
+
 #filtrar-tabela {
 	width: 200px;
 	height: 35px;
