@@ -81,4 +81,8 @@ function montaLi(erro){
     return li;
 }
 
+function adicionaPacienteNaTabela(x){
+    var pacienteTr = montaTr(x);
+    tabela.appendChild(pacienteTr);
+}
 
